@@ -43,7 +43,11 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 5px 40px;
-  background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,71,55,1) 100%);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 71, 55, 1) 100%
+  );
 }
 
 /* Placement of page logo */
@@ -87,7 +91,11 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,71,55,1) 100%);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 71, 55, 1) 100%
+  );
   color: white;
   text-align: center;
   padding: 10px;
@@ -118,10 +126,11 @@ footer {
 
 /* Pictures of the Houses */
 .propPic {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   border-radius: 12px;
   margin-top: 25px;
-  height: 187.50px;
+  height: 187.5px;
   width: 250px;
 }
 
@@ -185,12 +194,14 @@ button {
 /* Clear favorites button, alligning the location */
 .clearList-btn {
   position: absolute;
-  margin-top: -57px;
-  margin-left: -275px;
+  top: 1346px; /* Adjust the top position as needed */
+  left: 175px;
   background-color: white;
 }
 
-ul, li {
+/* Remove the list decoration on the icon */
+ul,
+li {
   list-style-type: none;
 }
 
@@ -238,28 +249,21 @@ ul, li {
   color: #24292e;
   background-color: #fafbfc;
   border-color: #1b1f2326;
-  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
   transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
   transition-property: color, background-color, border-color;
 }
 
 /* Hover effect */
 .filter:hover {
-    background-color: #f3f4f6;
-    border-color: #1b1f2326;
-    transition-duration: 0.1s;
+  background-color: #f3f4f6;
+  border-color: #1b1f2326;
+  transition-duration: 0.1s;
 }
 
-
-
-
-
-
-
-
-
-/* Style for the modal container */
-.modal {
+/* Modal container alligning the modal card and adding a semi transparent background around it */
+.modalContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -268,31 +272,44 @@ ul, li {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Style for the modal content */
-.modal-content {
+/* Card holding the content inside the Modal */
+.modalContent {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  max-width: 400px; /* Adjust the width as needed */
+  max-width: 400px;
   width: 100%;
   text-align: center;
 }
 
-/* Close button style */
-.modal-content button {
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+/* Button style for closing Modal */
+.modalContent button {
+  display: inline-block;
+  outline: 0;
   cursor: pointer;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  vertical-align: middle;
+  border: 1px solid;
+  border-radius: 6px;
+  color: #24292e;
+  background-color: #fafbfc;
+  border-color: #1b1f2326;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px,
+    rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color, background-color, border-color;
 }
 
-/* Close button hover effect */
-.modal-content button:hover {
-  background-color: #0056b3;
+/* Modal Button Hover Effect */
+.modalContent button:hover {
+  background-color: #f3f4f6;
+  border-color: #1b1f2326;
+  transition-duration: 0.1s;
 }

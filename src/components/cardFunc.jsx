@@ -96,8 +96,8 @@ function Cards() {
         </div>
       )}
       {isModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
+        <div className="modalContainer">
+          <div className="modalContent">
             <p>This is the modal content for property {selectedProperty.id}.</p>
             <button onClick={closeModal}>Close Modal</button>
           </div>

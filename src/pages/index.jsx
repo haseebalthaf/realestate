@@ -23,7 +23,7 @@ const Home = () => {
         </nav>
       </div>
       <div className="imageContainer">
-        <img src="/images/background.jpg" alt="Cityscape" className="home-bg" />
+        <img src="/images/background.jpg" alt="Cityscape" className="homeBg" />
         <div className="titleContainer">
           <h1>Welcome to the Real Estate Heaven!</h1>
           <p className="subContainer">Use the buttons above to navigate!</p>
