@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useFavorites } from "./favFunc";
 import { useModal } from "./modalFunc";
+import Tabs from "./modalTabs";
 import Properties from "./properties.json";
 import "../style/browse.css";
 
@@ -98,7 +99,16 @@ function Cards() {
       {isModalOpen && (
         <div className="modalContainer">
           <div className="modalContent">
-            <p>This is the modal content for property {selectedProperty.id}.</p>
+            <p>Type: {selectedProperty.type}</p>
+            <p>Bedrooms: {selectedProperty.bedrooms}</p>
+            <p>Location: {selectedProperty.location}</p>
+            <p>Tenure: {selectedProperty.tenure}</p>
+            <p>Price: £{selectedProperty.price}</p>
+            <p>
+              Date:{" "}
+              {`${selectedProperty.added.day} ${selectedProperty.added.month} ${selectedProperty.added.year}`}
+            </p>
+            <Tabs />
             <button onClick={closeModal}>Close Modal</button>
           </div>
         </div>
