@@ -109,7 +109,7 @@ function Cards() {
               {`${selectedProperty.added.day} ${selectedProperty.added.month} ${selectedProperty.added.year}`}
             </p>
             <ModalTabs selectedProperty={selectedProperty} />
-            <button onClick={closeModal}>Close Modal</button>
+            <button onClick={closeModal}>Close</button>
           </div>
         </div>
       )}

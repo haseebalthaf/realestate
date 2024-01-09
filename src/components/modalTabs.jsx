@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Tabs, Tab } from 'react-bootstrap';
-import '../style/browse.css';
+import React, { useState } from "react";
+import { Tabs, Tab } from "react-bootstrap";
+import "../style/browse.css";
 
 function ModalTabs({ selectedProperty }) {
-  const [activeTab, setActiveTab] = useState('desc');
+  const [activeTab, setActiveTab] = useState("desc");
 
   const handleTabSelect = (key) => {
     setActiveTab(key);
@@ -16,25 +16,32 @@ function ModalTabs({ selectedProperty }) {
       className="modalTabsContainer"
     >
       <Tab eventKey="desc" title="Description">
-        {activeTab === 'desc' && selectedProperty && (
+        {activeTab === "desc" && selectedProperty && (
           <div>
             <p>{selectedProperty.description}</p>
           </div>
         )}
       </Tab>
       <Tab eventKey="fPlan" title="Floorplan">
-        {activeTab === 'fPlan' && (
+        {activeTab === "fPlan" && selectedProperty && (
           <div>
-            Tab content for Floorplan
+            <img className="floorPlan" src={selectedProperty.floorplan} alt="Floorplan" />
           </div>
         )}
       </Tab>
       <Tab eventKey="gMap" title="Google Maps">
-        {activeTab === 'gMap' && (
-          <div>
-            Tab content for Google Maps
-          </div>
-        )}
+        {activeTab === "gMap" && 
+        <div>
+            <iframe
+              title="Google Map"
+              width="100%"
+              height="400"
+              frameBorder="0"
+              style={{ border: 0 }}
+              src={selectedProperty.url}
+              allowFullScreen
+            ></iframe>  
+        </div>}
       </Tab>
     </Tabs>
   );

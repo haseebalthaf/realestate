@@ -196,7 +196,7 @@ button {
 .clearList-btn {
   position: absolute;
   top: 17px;
-  left: 150px;
+  left: 140px;
   background-color: white;
 }
 
@@ -215,7 +215,6 @@ li {
 /* Search Form Container */
 .searchForm {
   margin: 20px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background: #f1f1f1;
   border-radius: 15px;
 }
@@ -322,4 +321,9 @@ li {
   justify-content: center;
   gap: 10px; /* Adjust the value to control the space between buttons */
   margin-top: 10px;
+}
+
+.floorPlan {
+  height: 300px;
+  width: 300px;
 }
