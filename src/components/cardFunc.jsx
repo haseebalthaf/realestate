@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useFavorites } from "./favFunc";
 import { useModal } from "./modalFunc";
-import Tabs from "./modalTabs";
+import ModalTabs from "./modalTabs";
 import Properties from "./properties.json";
 import "../style/browse.css";
 
@@ -53,6 +53,22 @@ function Cards() {
       {favorites.length > 0 && (
         <div className="favoriteContainer">
           <h1 className="propTitle">Favorites</h1>
+          <div className="clearList">
+            <ul>
+              {favorites.map((favorite) => (
+                <li key={favorite.id}></li>
+              ))}
+            </ul>
+            {favorites.length > 0 && (
+              <button className="clearList-btn" onClick={clearFavorites}>
+                <img
+                  className="Btn-img"
+                  src="../icons/delete.png"
+                  alt="Clear List"
+                />
+              </button>
+            )}
+          </div>
           {favorites.map((favorite) => (
             <div className="propertyContainer" key={favorite.id}>
               <img
@@ -78,22 +94,6 @@ function Cards() {
               </button>
             </div>
           ))}
-          <div className="clearList">
-            <ul>
-              {favorites.map((favorite) => (
-                <li key={favorite.id}></li>
-              ))}
-            </ul>
-            {favorites.length > 0 && (
-              <button className="clearList-btn" onClick={clearFavorites}>
-                <img
-                  className="Btn-img"
-                  src="../icons/delete.png"
-                  alt="Clear List"
-                />
-              </button>
-            )}
-          </div>
         </div>
       )}
       {isModalOpen && (
@@ -108,7 +108,7 @@ function Cards() {
               Date:{" "}
               {`${selectedProperty.added.day} ${selectedProperty.added.month} ${selectedProperty.added.year}`}
             </p>
-            <Tabs />
+            <ModalTabs selectedProperty={selectedProperty} />
             <button onClick={closeModal}>Close Modal</button>
           </div>
         </div>

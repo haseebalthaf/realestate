@@ -148,7 +148,6 @@ footer {
 /* Entire card with the House information */
 .propertyContainer {
   float: inline-start;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background: #f1f1f1;
   border-radius: 15px;
   height: 400px;
@@ -159,12 +158,14 @@ footer {
 
 /* Hover effect for the card */
 .propertyContainer:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: 0.3s;
   transform: scale(1.01);
 }
 
 /* Cards for Favorite section */
 .favoriteContainer {
+  position: relative;
   float: inline-end;
 }
 
@@ -194,8 +195,8 @@ button {
 /* Clear favorites button, alligning the location */
 .clearList-btn {
   position: absolute;
-  top: 1346px; /* Adjust the top position as needed */
-  left: 175px;
+  top: 17px;
+  left: 150px;
   background-color: white;
 }
 
@@ -281,7 +282,7 @@ li {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
+  max-width: 800px;
   width: 100%;
   text-align: center;
 }
@@ -312,4 +313,13 @@ li {
   background-color: #f3f4f6;
   border-color: #1b1f2326;
   transition-duration: 0.1s;
+}
+
+/* modalTabs.jsx */
+/* Organizing the buttons on the modal navigation tab */
+.modalTabsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust the value to control the space between buttons */
+  margin-top: 10px;
 }

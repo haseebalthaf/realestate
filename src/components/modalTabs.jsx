@@ -1,21 +1,40 @@
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import React, { useState } from 'react';
+import { Tabs, Tab } from 'react-bootstrap';
+import '../style/browse.css';
 
-function ModalTabs() {
+function ModalTabs({ selectedProperty }) {
+  const [activeTab, setActiveTab] = useState('desc');
+
+  const handleTabSelect = (key) => {
+    setActiveTab(key);
+  };
+
   return (
     <Tabs
-      defaultActiveKey="profile"
-      id="uncontrolled-tab-example"
-      className="mb-3"
+      activeKey={activeTab}
+      onSelect={handleTabSelect}
+      className="modalTabsContainer"
     >
-      <Tab eventKey="home" title="Home">
-        Tab content for Home
+      <Tab eventKey="desc" title="Description">
+        {activeTab === 'desc' && selectedProperty && (
+          <div>
+            <p>{selectedProperty.description}</p>
+          </div>
+        )}
       </Tab>
-      <Tab eventKey="profile" title="Profile">
-        Tab content for Profile
+      <Tab eventKey="fPlan" title="Floorplan">
+        {activeTab === 'fPlan' && (
+          <div>
+            Tab content for Floorplan
+          </div>
+        )}
       </Tab>
-      <Tab eventKey="contact" title="Contact" disabled>
-        Tab content for Contact
+      <Tab eventKey="gMap" title="Google Maps">
+        {activeTab === 'gMap' && (
+          <div>
+            Tab content for Google Maps
+          </div>
+        )}
       </Tab>
     </Tabs>
   );
