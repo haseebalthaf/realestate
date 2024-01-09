@@ -1,0 +1,298 @@
+/* Font for Website */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/* Fade in animation */
+@keyframes fadeIn {
+  25% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* browse.jsx */
+/* Website body */
+html,
+body {
+  animation: fadeIn 0.5s;
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  color: black;
+  overflow: auto;
+}
+
+/* Universal style for horizontal rule */
+hr {
+  border: 0;
+  height: 1px;
+  width: 80%;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+  animation: fadeIn 2s;
+}
+
+/* Navigation bar */
+/* Aligning and decorating navigation bar and navigation items */
+.navBar {
+  font-family: "Poppins";
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 40px;
+  background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,71,55,1) 100%);
+}
+
+/* Placement of page logo */
+.logoContainer {
+  display: flex;
+  margin-left: 200px;
+  padding: 10px;
+}
+
+/* Navigation container, holding the navigation items */
+.navContainer {
+  margin-right: 200px;
+}
+
+/* Items of navigation container */
+.navItem {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 7px;
+  transition: 0.3s;
+}
+
+/* Animations on hover for items */
+.navItem:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Active selector functionality */
+.navItem.active {
+  border: 1px solid white;
+}
+
+/* Footer */
+/* General styles for footer */
+footer {
+  font-family: "Poppins";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,71,55,1) 100%);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Footer container for text */
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cards.jsx */
+.cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 18px;
+  padding-left: 40px;
+  height: auto;
+}
+
+/* Section Title */
+.propTitle {
+  margin-left: 10px;
+  font-size: 26px;
+}
+
+/* Pictures of the Houses */
+.propPic {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 12px;
+  margin-top: 25px;
+  height: 187.50px;
+  width: 250px;
+}
+
+/* Location(Title) of the House */
+.propLoc {
+  font-size: 18px;
+}
+
+/* Pricing and House type information text */
+.infoContainer {
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* Entire card with the House information */
+.propertyContainer {
+  float: inline-start;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #f1f1f1;
+  border-radius: 15px;
+  height: 400px;
+  width: 420px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Hover effect for the card */
+.propertyContainer:hover {
+  transition: 0.3s;
+  transform: scale(1.01);
+}
+
+/* Cards for Favorite section */
+.favoriteContainer {
+  float: inline-end;
+}
+
+/* Removing borders from the button */
+button {
+  border: none;
+}
+
+/* Button Appearance */
+.Btn-img {
+  padding: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+/* Hover Effect */
+.Btn-img:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #d3d3d3;
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Clear favorites button, alligning the location */
+.clearList-btn {
+  position: absolute;
+  margin-top: -57px;
+  margin-left: -275px;
+  background-color: white;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+/* Setting size of the spacer at the bottom of the page */
+.spacer {
+  margin-bottom: 50px;
+}
+
+/* searchBar.jsx */
+/* Search Form Container */
+.searchForm {
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #f1f1f1;
+  border-radius: 15px;
+}
+
+/* Items inside the search form */
+.itemContainer {
+  color: black;
+  padding: 20px;
+}
+
+/* Input fields */
+.inputField {
+  margin: 6px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 5px;
+}
+
+/* Decorating appearance of Filter button */
+.filter {
+  display: inline-block;
+  outline: 0;
+  cursor: pointer;
+  padding: 5px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  vertical-align: middle;
+  border: 1px solid;
+  border-radius: 6px;
+  color: #24292e;
+  background-color: #fafbfc;
+  border-color: #1b1f2326;
+  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px 0px inset;
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color, background-color, border-color;
+}
+
+/* Hover effect */
+.filter:hover {
+    background-color: #f3f4f6;
+    border-color: #1b1f2326;
+    transition-duration: 0.1s;
+}
+
+
+
+
+
+
+
+
+
+/* Style for the modal container */
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+/* Style for the modal content */
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px; /* Adjust the width as needed */
+  width: 100%;
+  text-align: center;
+}
+
+/* Close button style */
+.modal-content button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Close button hover effect */
+.modal-content button:hover {
+  background-color: #0056b3;
+}

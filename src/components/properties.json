@@ -1,0 +1,115 @@
+{
+	"properties": [
+        {
+            "id":"prop1",
+			"type":"House",
+            "bedrooms":3,
+			"price":750000,
+			"tenure":"Freehold",
+			"description":"Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
+			"location":"Petts Wood Road, Petts Wood, Orpington",
+			"picture":"../public/properties/prop1.png",
+			"url":"./pages/html/prop1.html",
+            "added": {
+                "month":"October",
+                "day":12,
+                "year":2022
+            }
+        },
+		{
+            "id":"prop2",
+			"type":"Flat",
+            "bedrooms":2,
+			"price":399995,
+			"tenure":"Freehold",
+			"description":"Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
+			"location":"Crofton Road Orpington BR6",
+			"picture":"../public/properties/prop2.png",
+			"url":"./pages/html/prop2.html",
+            "added": {
+                "month":"September",
+                "day":14,
+                "year":2022
+            }
+        },
+        {
+			"id": "prop3",
+			"type": "House",
+			"bedrooms": 1,
+			"price": 275000,
+			"tenure": "Leasehold",
+			"description": "Charming one-bedroom apartment located in the heart of the city. The property features a spacious living room, a well-equipped kitchen, and a modern bathroom. With large windows, the apartment is filled with natural light. Conveniently situated near public transportation, shopping centers, and trendy cafes.",
+			"location": "City Center, Orpington BR5",
+			"picture": "../public/properties/prop3.png",
+			"url": "./pages/html/prop3.html",
+			"added": {
+				"month": "November",
+				"day": 5,
+				"year": 2022
+			}
+		},
+		{
+			"id": "prop4",
+			"type": "Flat",
+			"bedrooms": 4,
+			"price": 950000,
+			"tenure": "Freehold",
+			"description": "Elegant four-bedroom detached house with a spacious garden and private driveway. The property offers a bright and airy atmosphere, featuring a large living room, modern kitchen, and a master bedroom with an ensuite bathroom. Close proximity to reputable schools, parks, and local amenities.",
+			"location": "Oak Avenue, Orpington NW1",
+			"picture": "../public/properties/prop4.png",
+			"url": "./pages/html/prop4.html",
+			"added": {
+				"month": "December",
+				"day": 8,
+				"year": 2022
+			}
+		},
+		{
+			"id": "prop5",
+			"type": "House",
+			"bedrooms": 3,
+			"price": 550000,
+			"tenure": "Freehold",
+			"description": "Well-maintained three-bedroom townhouse featuring a modern kitchen, a cozy living area, and a private patio. The property is within walking distance to public transport, schools, and parks. Ideal for families seeking a comfortable and conveniently located home.",
+			"location": "Maple Street, Orpington NW3",
+			"picture": "../public/properties/prop5.png",
+			"url": "./pages/html/prop5.html",
+			"added": {
+				"month": "January",
+				"day": 15,
+				"year": 2023
+			}
+		},
+		{
+			"id": "prop6",
+			"type": "Flat",
+			"bedrooms": 1,
+			"price": 200000,
+			"tenure": "Leasehold",
+			"description": "Stylish studio apartment in a newly developed complex. The open-plan design maximizes space, and the unit is equipped with modern appliances. Ideal for singles or couples looking for a contemporary urban living experience. Close to public transportation and vibrant city life.",
+			"location": "High Street, Orpington BR6",
+			"picture": "../public/properties/prop6.png",
+			"url": "./pages/html/prop6.html",
+			"added": {
+				"month": "February",
+				"day": 22,
+				"year": 2023
+			}
+		},
+		{
+			"id": "prop7",
+			"type": "House",
+			"bedrooms": 2,
+			"price": 475000,
+			"tenure": "Freehold",
+			"description": "Quaint two-bedroom bungalow with a spacious garden and a charming front porch. The property features a cozy living room, a well-appointed kitchen, and a modern bathroom. Located in a peaceful neighborhood, offering a retreat-like atmosphere.",
+			"location": "Elm Lane, Orpington BR2",
+			"picture": "../public/properties/prop7.png",
+			"url": "./pages/html/prop7.html",
+			"added": {
+				"month": "March",
+				"day": 10,
+				"year": 2023
+			}
+		}
+]}
