@@ -3,10 +3,8 @@ import { Tabs, Tab } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import "../style/browse.css";
 
-
 function ModalTabs({ selectedProperty }) {
   const [activeTab, setActiveTab] = useState("desc");
-  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   const handleTabSelect = (key) => {
     setActiveTab(key);
@@ -56,11 +54,7 @@ function ModalTabs({ selectedProperty }) {
           selectedProperty.interior &&
           selectedProperty.interior.length > 0 && (
             <div>
-              <Carousel
-                className="carousel"
-                interval={null}
-                controls={false}  // Set controls to false to hide the previous and next controls
-              >
+              <Carousel className="carousel" interval={null} controls={false}>
                 <Carousel.Item className="carouselItem">
                   <div className="intPicCarousel">
                     {selectedProperty.interior.map((imagePath, index) => (

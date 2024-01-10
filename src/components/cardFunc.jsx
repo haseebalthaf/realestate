@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useFavorites } from "./favFunc";
 import { useModal } from "./modalFunc";
 import ModalTabs from "./modalTabs";
@@ -17,7 +17,6 @@ function Cards() {
       <div className="browseContainer">
         <h1 className="propTitle">Browse Properties</h1>
         {Properties.properties.map((property) => (
-          
           <div className="propertyContainer" key={property.id}>
             <img
               className="propPic"

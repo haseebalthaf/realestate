@@ -323,13 +323,13 @@ li {
   margin-top: 10px;
 }
 
-/* Floorplan image sizing */
+/* Floorplan image resizing inside the floorplan */
 .floorPlan {
   height: 300px;
   width: 300px;
 }
 
-/* Interior pictures resizing */
+/* Interior pictures resizing inside the interior tab */
 .intPic {
   height: 150px;
   width: 250px;
