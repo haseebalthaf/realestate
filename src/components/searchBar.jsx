@@ -1,9 +1,9 @@
 import React from "react";
 import "../style/browse.css";
 
-const SearchBar = ({ handleSearch }) => {
+const SearchBar = () => {
   return (
-    <form className="searchForm">
+    <form className="searchForm" >
       <div className="itemContainer">
         <label htmlFor="type">Type of Property:</label>
         <select className="inputField" name="type" id="type">

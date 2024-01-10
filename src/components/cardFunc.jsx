@@ -17,6 +17,7 @@ function Cards() {
       <div className="browseContainer">
         <h1 className="propTitle">Browse Properties</h1>
         {Properties.properties.map((property) => (
+          
           <div className="propertyContainer" key={property.id}>
             <img
               className="propPic"
