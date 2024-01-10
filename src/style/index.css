@@ -42,7 +42,11 @@ hr {
   justify-content: space-between;
   align-items: center;
   padding: 5px 40px;
-  background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,71,55,1) 100%);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 71, 55, 1) 100%
+  );
 }
 
 /* Placement of page logo */
@@ -115,7 +119,11 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,71,55,1) 100%);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 71, 55, 1) 100%
+  );
   color: white;
   text-align: center;
   padding: 10px;
