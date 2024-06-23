@@ -11,7 +11,7 @@ function Cards() {
   const { isModalOpen, openModal, closeModal, selectedProperty } = useModal();
 
   return (
-    // Main container for cards
+// Main container for cards
     <div className="cardsContainer">
       {/* Browse Section */}
       <div className="browseContainer">

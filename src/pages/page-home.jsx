@@ -1,15 +1,16 @@
-import "../style/index.css";
+import "../style/home.css";
+import "../style/navbar.css";
 import { windowTitle } from "../components/windowTitle";
 
 const Home = () => {
   windowTitle("Properties | Home");
   return (
     <>
-      {/* Navigation Bar */}
+      {/* Navigation bar */}
       <div className="navBar">
         <img
           src="/images/logo.png"
-          alt="Website logo"
+          alt="website-logo"
           className="logoContainer"
           height="45"
         />
@@ -22,13 +23,11 @@ const Home = () => {
           </a>
         </nav>
       </div>
-      <div className="imageContainer">
-        <img src="/images/background.jpg" alt="Cityscape" className="homeBg" />
-        <div className="titleContainer">
-          <h1>Welcome to the Real Estate Heaven!</h1>
-          <p className="subContainer">Use the buttons above to navigate!</p>
-        </div>
-      </div>
+      {/* Website content */}
+      <section className="homeSection">
+        <h1 className="homeTitle">Welcome to the Real Estate Heaven!</h1>
+        <p className="homeSub">Use the buttons above to navigate!</p>
+      </section>
       {/* Footer */}
       <footer>
         <div className="footerContainer">

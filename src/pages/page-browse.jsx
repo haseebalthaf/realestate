@@ -1,4 +1,5 @@
 import "../style/browse.css";
+import "../style/navbar.css";
 import { windowTitle } from "../components/windowTitle";
 import SearchBar from "../components/searchBar";
 import Cards from "../components/cardFunc";
@@ -11,7 +12,7 @@ const Browse = () => {
       <div className="navBar">
         <img
           src="/images/logo.png"
-          alt="Website logo"
+          alt="website-logo"
           className="logoContainer"
           height="45"
         />
